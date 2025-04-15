@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+ frontend:
+  container_name: my_frontend
+  build: ./frontend
+  ports:
+   - "8181:80"
+ backend:
+  container_name: my_backend
+  build: ./backend
+  ports:
+   - "5000:5000"
