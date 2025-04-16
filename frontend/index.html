@@ -228,7 +228,7 @@
 
         // Fetch API
         document.getElementById('callBackendBtn').addEventListener('click', () => {
-            fetch('http://192.168.100.205:5000/api') 
+            fetch('http://3.27.195.20:5000/api') 
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('message').textContent = data.message;
