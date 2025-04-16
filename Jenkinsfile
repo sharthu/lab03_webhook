@@ -1,9 +1,9 @@
 pipeline {
     agent {
-        label 'agent-with-ssh'
+        label 'aws-agent'
     }
     environment {
-        workspace = "/home/sharthu/project/jklab02"
+        workspace = "/home/ubuntu/project/testwebhook"
     }
     stages {
         stage('Checkout Source') {
